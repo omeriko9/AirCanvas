@@ -86,6 +86,12 @@ public class HandDraw : MonoBehaviour
             return;
         }
 
+        // Check if the B button is pressed
+        if (OVRInput.GetDown(OVRInput.Button.Two)) // B button
+        {
+            ClearCanvas();
+        }
+
         // Check if the A button is pressed
         if (OVRInput.Get(OVRInput.Button.One)) // A button on Oculus controller
         {
