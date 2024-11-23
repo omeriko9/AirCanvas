@@ -118,6 +118,14 @@ public class HandDraw : MonoBehaviour
             ClearCanvas();
         }
 
+        // Get the grip depth for the right controller
+        float gripDepth = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger);
+
+        // Map the grip depth to the dot size range (3.0 to 100.0)
+        dotSize = Mathf.Lerp(3.0f, 100.0f, gripDepth);
+
+        Debug.Log($"Grip Depth: {gripDepth}, Dot Size: {dotSize}");
+
         // Check if the A button is pressed
         if (OVRInput.Get(OVRInput.Button.One)) // A button on Oculus controller
         {
