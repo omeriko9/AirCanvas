@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.24f1
+CRC: 2615968824
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4ba514665db16e277a462821f2aa5538
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e50f4ac15a6d1aa7ab651c2e53a0771b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0b83b9603956571466bb7df81e7fd3fc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat
+- Assets/PaintingCanvasMaterial.mat
+- Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat
+- Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureSkeletonBoneMaterial.mat
+- Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.mat
+- Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureHandMaterial.mat
+- Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat
+- Packages/com.meta.xr.sdk.interaction/Runtime/Materials/OculusHand.mat
+- Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/batteryIndicator_mat.mat
+- Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.mat
+- Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SkeletonBoneMaterial.mat
+- Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat
+- Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat
+- Assets/DrawMaterial.mat
+- Assets/Fantasy Skybox FREE/Panoramics/FS002/FS002_Sunset.mat
+- Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/DefaultHandMaterial.mat
+Dependencies:
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_rendertexture0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_tga0

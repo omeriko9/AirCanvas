@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.24f1
+CRC: 3983210955
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1639d1fca4b7399732e5740c443e96f2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f34cef16df2eca146fb753b8cd113de
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d0b6085a790911a7f43524b315d8c3ca
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 8922a6ca86889d84f8371a29d37b6dc8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b3d881e962d099f4a8eb492ef7e9a8c0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2b76bcf034ab49e4a8cd30239a716460, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f3fe6e38ac2d4c22b04340d6eda2a47e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 191492db6e452eb468b95433ec162164, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a7d75bea1662418ab5f9e0c22110bc09, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 690929a59dc7a42da9030305190d391f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60e5406209e5ed147bb02ed71f9c40f3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3863570e7e6387a40ae4f323d83291e5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
+- Assets/Resources/OVRBuildConfig.asset
+- Assets/Resources/MetaXRAudioSettings.asset
+- Assets/Resources/OVRPlatformToolSettings.asset
+- Assets/Resources/OculusPlatformSettings.asset
+- Assets/Resources/ImmersiveDebuggerSettings.asset
+- Assets/XRI/Settings/Resources/InteractionLayerSettings.asset
+- Assets/Resources/MetaXRAcousticSettings.asset
+- Assets/Resources/OculusRuntimeSettings.asset
+- Assets/Resources/MetaXRAcousticMaterialMapping.asset
+- Assets/Resources/InputActions.asset
+Dependencies: []
