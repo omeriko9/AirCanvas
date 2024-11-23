@@ -13,6 +13,21 @@ public class HandDraw : MonoBehaviour
     private Material canvasMaterial;
     private Texture2D brushTexture;
 
+    // List of basic colors to cycle through
+    private readonly Color[] colors = new Color[]
+    {
+    Color.red,
+    Color.blue,
+    Color.green,
+    Color.yellow,
+    Color.magenta,
+    Color.cyan,
+    Color.white
+    };
+
+    // Current color index
+    private int currentColorIndex = 0;
+
     private void Start()
     {
         SetupMeshCollider();
@@ -84,6 +99,17 @@ public class HandDraw : MonoBehaviour
         if (paintingCanvasRenderTexture == null || rightControllerTransform == null || canvasMaterial == null)
         {
             return;
+        }
+
+        // Check if the Y button is pressed
+        if (OVRInput.GetDown(OVRInput.Button.Four)) // Y button on left controller
+        {
+            // Cycle to the next color
+            currentColorIndex = (currentColorIndex + 1) % colors.Length;
+
+            // Update the draw material color
+            drawMaterial.color = colors[currentColorIndex];
+            Debug.Log($"Color switched to: {drawMaterial.color}");
         }
 
         // Check if the B button is pressed

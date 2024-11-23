@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 1174654701
+CRC: 3484306133
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ae74954ba71d1790a00fbd84adb2719f
+    Hash: b0c084150dea3d2c531a8899fc1bddcc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: fed49e296224c6ced9bf95920b17c10f
+    Hash: 3c465769311905b5885418fb45cade01
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 9b8171add01945e79052acb40139596e
+    Hash: 5dff1e4ca7387ed8ae91e0bf15a040fa
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -62,11 +62,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: eca63d68d92868342b559d152a4e2212, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 6eb5e919275d29245bba9a1f0e849e6a, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: af971bbb5a5ba904a86366e40b4a75df, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: aed62bf3ae2456c408f247f96808ce96, type: 3}
 - Class: 114
@@ -75,6 +79,10 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 2606bf2f0c914a7aba4390f29ba2eb6e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 998a5646185efb9488265f3a2f35a99a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 2ff26c21ac005534e8af75f8427be9d1, type: 3}
 - Class: 114
@@ -102,6 +110,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a7b47e36715521d4e8a30d2c5b6e83e2, type: 3}
@@ -126,6 +136,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 73eac66b128fc8749a21623225c34541, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 6d2303af7d4c7114681742031c4a0ac6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -148,7 +160,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: cfef734574658f14595a4e4a96dd6773, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 4dffc2a801520fb4cbe2c11894faf431, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
 - Class: 114
@@ -156,10 +172,14 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 9067480af55f5874d8f613b16812f968, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 488896fe86105104a8453d9f173cf62a, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5e38df5678b37d6429ef2446d3589e00, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 128
   Script: {instanceID: 0}
 - Class: 135
   Script: {instanceID: 0}
@@ -177,6 +197,12 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 218
   Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
 - Class: 1953259897
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
@@ -186,6 +212,8 @@ Dependencies:
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_asset0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_controller0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_inputactions0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_mat0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_prefab0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_rendertexture0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_resources

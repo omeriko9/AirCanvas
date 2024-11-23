@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 3455101172
+CRC: 2144418096
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b53cf787126cef98f29645d75c4c34db
+    Hash: 844e48feb53d327836a890369b96fe90
   TypeTreeHash:
     serializedVersion: 2
     Hash: bb8521372c98e74594d3b7eb1b0a7a88
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f98568fa9895ee26a5bc8d63a70b1be3
+    Hash: 3601112751c1882f68e97d902be4e9bd
 HashAppended: 0
 ClassTypes:
 - Class: 48
@@ -19,6 +19,7 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Packages/com.meta.xr.sdk.core/Shaders/MetaLit.shader
 - Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Shaders/OculusSampleAlphaHandOutline.shader
+- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
 - Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/RoomModel/Shaders/TransparentTexture.shader
 - Packages/com.meta.xr.sdk.interaction/Runtime/Shaders/OculusHand.shader
 Dependencies: []
