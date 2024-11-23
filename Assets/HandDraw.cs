@@ -105,7 +105,6 @@ public class HandDraw : MonoBehaviour
                         // Interpolate if we have a previous UV coordinate
                         if (previousUV.HasValue)
                         {
-                            Debug.Log($"Interpolating (previousUV.HasValue == true)");
                             InterpolateDots(previousUV.Value, hit.textureCoord);
                         }
 
@@ -126,14 +125,15 @@ public class HandDraw : MonoBehaviour
     private void InterpolateDots(Vector2 startUV, Vector2 endUV)
     {
         float distance = Vector2.Distance(startUV, endUV);
-        int steps = Mathf.CeilToInt(distance * 100); // Increase 100 to make it even smoother
+        int steps = Mathf.CeilToInt(distance * 300); // Higher multiplier for smoother results at higher speeds
+        steps = Mathf.Max(steps, 10); // Ensure a minimum number of steps for very short distances
+
         for (int i = 0; i <= steps; i++)
         {
             Vector2 interpolatedUV = Vector2.Lerp(startUV, endUV, (float)i / steps);
             DrawDot(interpolatedUV);
         }
     }
-
 
 
     private void DrawDot(Vector2 uv)
