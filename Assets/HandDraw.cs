@@ -10,8 +10,16 @@ public class HandDraw : MonoBehaviour
     public float maxDrawingDistance = 0.5f; // Maximum distance to allow drawing
     public Material drawMaterial;
 
+   
+    public BellSoundGenerator bellSoundGenerator;
+    public GameObject audioSourcePrefabInHierarchy;
+
     private Material canvasMaterial;
     private Texture2D brushTexture;
+    private float nextBellTime = 0f; // When to play the next bell
+    private float interval = 0.25f;  // Minimum interval between bell sounds
+
+
 
     // List of basic colors to cycle through
     private readonly Color[] colors = new Color[]
@@ -47,6 +55,26 @@ public class HandDraw : MonoBehaviour
             ClearCanvas();
             canvasMaterial.mainTexture = paintingCanvasRenderTexture;
         }
+
+        // Find the BellSoundGenerator script dynamically
+        bellSoundGenerator = FindObjectOfType<BellSoundGenerator>();
+
+        if (bellSoundGenerator == null)
+        {
+            Debug.LogError("BellSoundGenerator not found in the scene.");
+            return;
+        }
+
+        // Assign the AudioSourcePrefab from the Hierarchy
+        AudioSource audioSourceComponent = audioSourcePrefabInHierarchy.GetComponent<AudioSource>();
+        if (audioSourceComponent == null)
+        {
+            Debug.LogError("AudioSourcePrefabInHierarchy does not have an AudioSource component!");
+            return;
+        }
+
+        // Initialize the BellSoundGenerator via Setup
+        bellSoundGenerator.Setup(audioSourceComponent);
     }
 
     private void SetupMeshCollider()
@@ -136,6 +164,9 @@ public class HandDraw : MonoBehaviour
                 Debug.Log($"Raycast Hit: {hit.collider.gameObject.name} on Device.");
                 Debug.DrawRay(ray.origin, ray.direction * maxDrawingDistance, Color.green);
 
+                //bellSoundGenerator.StartBellSound();
+                PlaySoundCheck();
+
                 if (hit.collider.gameObject.CompareTag("Obstacle")) // Ensure canvas has "Obstacle" tag
                 {
                     if (hit.textureCoord != Vector2.zero)
@@ -158,6 +189,21 @@ public class HandDraw : MonoBehaviour
         {
             // Reset the previous UV when A button is not pressed
             previousUV = null;
+            bellSoundGenerator.StopBellSound();
+        }
+    }
+
+    private void PlaySoundCheck()
+    {
+        // Play a new random bell sound at regular intervals
+        if (Time.time >= nextBellTime)
+        {
+            // Randomly select a note from the A minor scale
+            int randomScaleIndex = Random.Range(0, bellSoundGenerator.minorScaleFrequencies.Length);
+            bellSoundGenerator.PlayBellSound(randomScaleIndex);
+
+            // Set the next bell time with some randomness for natural variation
+            nextBellTime = Time.time + Random.Range(interval * 0.4f, interval * 1f);
         }
     }
 
