@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class HandDraw : MonoBehaviour
@@ -9,10 +10,12 @@ public class HandDraw : MonoBehaviour
     public Color dotColor = Color.black;
     public float maxDrawingDistance = 0.5f; // Maximum distance to allow drawing
     public Material drawMaterial;
-
+     
    
     public BellSoundGenerator bellSoundGenerator;
     public GameObject audioSourcePrefabInHierarchy;
+
+
 
     private Material canvasMaterial;
     private Texture2D brushTexture;
@@ -30,16 +33,19 @@ public class HandDraw : MonoBehaviour
     Color.yellow,
     Color.magenta,
     Color.cyan,
+    Color.black,
     Color.white
     };
 
     // Current color index
     private int currentColorIndex = 0;
+       
 
     private void Start()
     {
         SetupMeshCollider();
         CreateBrushTexture();
+    
 
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
@@ -57,7 +63,7 @@ public class HandDraw : MonoBehaviour
         }
 
         // Find the BellSoundGenerator script dynamically
-        bellSoundGenerator = FindObjectOfType<BellSoundGenerator>();
+        bellSoundGenerator = FindFirstObjectByType<BellSoundGenerator>();
 
         if (bellSoundGenerator == null)
         {
@@ -147,7 +153,7 @@ public class HandDraw : MonoBehaviour
         }
 
         // Get the grip depth for the right controller
-        float gripDepth = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger);
+        float gripDepth = OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger);
 
         // Map the grip depth to the dot size range (3.0 to 100.0)
         dotSize = Mathf.Lerp(3.0f, 100.0f, gripDepth);
@@ -184,13 +190,14 @@ public class HandDraw : MonoBehaviour
                     }
                 }
             }
-        }
+        }        
         else
         {
             // Reset the previous UV when A button is not pressed
             previousUV = null;
-            bellSoundGenerator.StopBellSound();
+            bellSoundGenerator.StopBellSound();// Random.Range(interval * 0.4f, interval * 1f));
         }
+        
     }
 
     private void PlaySoundCheck()

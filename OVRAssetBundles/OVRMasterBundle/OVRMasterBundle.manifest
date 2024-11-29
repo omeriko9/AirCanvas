@@ -1,6 +1,6 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 423615016
+CRC: 2876582230
 HashAppended: 0
 AssetBundleManifest:
   AssetBundleInfos:
@@ -16,9 +16,9 @@ AssetBundleManifest:
         Dependency_1: asset_mat0
         Dependency_2: asset_fbx0
         Dependency_3: asset_controller0
-        Dependency_4: asset_asset0
-        Dependency_5: asset_rendertexture0
-        Dependency_6: asset_prefab0
+        Dependency_4: asset_prefab0
+        Dependency_5: asset_asset0
+        Dependency_6: asset_rendertexture0
         Dependency_7: asset_inputactions0
     Info_2:
       Name: asset_shader0
@@ -41,24 +41,25 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: asset_fbx0
     Info_6:
+      Name: asset_prefab0
+      Dependencies:
+        Dependency_0: asset_mat0
+        Dependency_1: asset_fbx0
+        Dependency_2: asset_controller0
+    Info_7:
       Name: asset_asset0
       Dependencies:
         Dependency_0: asset_terrainlayer0
-    Info_7:
+    Info_8:
       Name: asset_png0
       Dependencies: {}
-    Info_8:
+    Info_9:
       Name: asset_rendertexture0
       Dependencies: {}
-    Info_9:
+    Info_10:
       Name: asset_terrainlayer0
       Dependencies:
         Dependency_0: asset_png0
-    Info_10:
-      Name: asset_prefab0
-      Dependencies:
-        Dependency_0: asset_fbx0
-        Dependency_1: asset_controller0
     Info_11:
       Name: asset_tga0
       Dependencies: {}

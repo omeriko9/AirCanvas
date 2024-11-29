@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 2281120501
+CRC: 237668467
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0ab500ca3e9e04d9d52064f098689096
+    Hash: b9460614fd1fda13f97f327e85f728a2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 38cd7a2fdfd1a0053b32cbcdba3d80e7
+    Hash: 9d564e5e3a3bd8ee31c585c79b410867
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 99080ff9ce29a10a8402327f5b143487
+    Hash: 7a409729a31412be3263f9b637195ee7
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -28,14 +28,26 @@ ClassTypes:
 - Class: 95
   Script: {instanceID: 0}
 - Class: 114
+  Script: {fileID: 11500000, guid: 5cc5c234723e3a54d8dd09b131117743, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: aed62bf3ae2456c408f247f96808ce96, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 54c16b381e28e8d479237771d234dbae, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cb7623a8f0b49cf4dbaa40aea4d4be64, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73eac66b128fc8749a21623225c34541, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Packages/com.meta.xr.sdk.core/Prefabs/OVRHandPrefab.prefab
 - Packages/com.meta.xr.sdk.core/Prefabs/OVRControllerPrefab.prefab
 Dependencies:
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_controller0
 - C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- C:/Users/Omer/TestQuest3/OVRAssetBundles/OVRMasterBundle/asset_mat0

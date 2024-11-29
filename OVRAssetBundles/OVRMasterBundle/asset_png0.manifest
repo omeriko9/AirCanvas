@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 1516350075
+CRC: 2088125321
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a9d4318c730eadd79308fb3981f1a139
+    Hash: 03a4ab3e24dd58360f6cce5cf186716a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5527383dc91eba37123fc67ad6efaa19
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: ef41b391b865ffd4d51a9786df6f3e94
+    Hash: 6b905fee09b1e623490c89da73b304f9
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -20,6 +20,7 @@ Assets:
 - Packages/com.meta.xr.sdk.core/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Normals.png
 - Assets/Fantasy Skybox FREE/Panoramics/FS002/FS002_Sunset.png
 - Packages/com.meta.xr.sdk.core/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Metallic.png
+- Packages/com.meta.xr.sdk.core/Textures/HandTracking/HandTracking_uvmap_2048.png
 - Assets/Fantasy Skybox FREE/Scenes/Textures (Terrain)/Texture_Grass_Normal.png
 - Packages/com.meta.xr.sdk.core/Textures/MetaQuestTouchPlus/MetaQuestTouchPlus_Left_BaseColor_AO_AlphaRoughness.png
 - Assets/Fantasy Skybox FREE/Panoramics/FS017/FS017_Night_Moonless.png

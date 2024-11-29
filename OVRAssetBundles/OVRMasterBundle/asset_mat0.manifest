@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.24f1
-CRC: 2615968824
+CRC: 3259796677
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4ba514665db16e277a462821f2aa5538
+    Hash: 21b6f16d11217de23a72be06b3c13e1f
   TypeTreeHash:
     serializedVersion: 2
     Hash: e50f4ac15a6d1aa7ab651c2e53a0771b
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 0b83b9603956571466bb7df81e7fd3fc
+    Hash: ed4a8c06daedb9114777df5994cf4802
 HashAppended: 0
 ClassTypes:
 - Class: 21
@@ -24,12 +24,14 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat
+- Packages/com.meta.xr.sdk.core/Materials/BasicHandMaterial.mat
 - Assets/PaintingCanvasMaterial.mat
 - Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat
 - Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureSkeletonBoneMaterial.mat
 - Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.mat
 - Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureHandMaterial.mat
 - Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat
+- Assets/LineRendererMaterial.mat
 - Packages/com.meta.xr.sdk.interaction/Runtime/Materials/OculusHand.mat
 - Packages/com.meta.xr.sdk.core/Meshes/MetaQuestTouchPro/Materials/batteryIndicator_mat.mat
 - Packages/com.meta.xr.sdk.core/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.mat
